@@ -2,12 +2,7 @@ class Post
 attr_accessor :title
 
 end
-describe "Post" do
-  let!(:post) { Post.new }
-  it "has a title" do
-    post.title = "Hello World"
-    expect(post.title).to eq("Hello World")
-  end
+
 
   it "belongs to an author" do
     author = Author.new
